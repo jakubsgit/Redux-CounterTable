@@ -1,13 +1,15 @@
 import * as actionTypes from './actionsTypes'
 
-export const increment = () => {
+export const increment = (value) => {
     return {
-        type: actionTypes.INCREMENT
+        type: actionTypes.INCREMENT,
+        val: value
     };
 };
-export const decrement = () => {
+export const decrement = (value) => {
     return {
-        type: actionTypes.DECREMENT
+        type: actionTypes.DECREMENT,
+        val: value
     };
 };
 export const add = (value) => {
